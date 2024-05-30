@@ -2,6 +2,7 @@ import React from "react";
 import { useRef } from "react";
 
 const MyForm = () => {
+  // uncontrolled form
   const addressRef = useRef("");
 
   const handleOnSubmit = (e) => {
@@ -9,9 +10,11 @@ const MyForm = () => {
     console.log(addressRef.current.value);
   };
 
+  //   controlled form
   const handleOnChange = (e) => {
     const str = e.target.value;
     console.log(str);
+    console.log(e);
   };
 
   console.log(addressRef);
@@ -19,13 +22,13 @@ const MyForm = () => {
     <div>
       <form action="" className="card" onSubmit={handleOnSubmit}>
         <div className="mb-3">
-          {/* <input
+          <input
             type="text"
             className="form-control"
             required
             placeholder="name"
             onChange={handleOnChange}
-          /> */}
+          />
           <input
             type="text"
             className="form-control"

@@ -1,9 +1,14 @@
-import { useState } from "react";
 import "./App.css";
-import MyForm from "./MyForm.jsx";
+import Form from "./weekensdPratice/Form.jsx";
+import Title from "./weekensdPratice/Title.jsx";
 
 const App = () => {
-  return <MyForm />;
+  return (
+    <>
+      <Title />
+      <Form />
+    </>
+  );
 };
 
 export default App;

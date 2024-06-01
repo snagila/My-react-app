@@ -5,7 +5,12 @@ const Input = ({ type, id, placeholder }) => {
   return (
     <>
       {/* components are reusuable */}
-      <input type={type} id={id} placeholder={placeholder} />
+      <input
+        type={type}
+        id={id}
+        placeholder={placeholder}
+        className="form-control mb-2"
+      />
     </>
   );
 };
